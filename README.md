@@ -11,3 +11,7 @@
 
 ## 4) Create a topic
        ./kafka-topics.sh --create --topic test-topic -zookeeper localhost:2181 --replication-factor 1 --partitions 4
+       
+### With Kafka 3.0 onwards
+      ./kafka-topics.sh --create --topic test-topic --replication-factor 1 --partitions 4 --bootstrap-server localhost:9092
+
