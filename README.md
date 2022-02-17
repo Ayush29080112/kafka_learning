@@ -15,3 +15,6 @@
 ### With Kafka 3.0 onwards
       ./kafka-topics.sh --create --topic test-topic --replication-factor 1 --partitions 4 --bootstrap-server localhost:9092
 
+## 5) How to instantiate a Console Producer?
+### Without key
+      ./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic
