@@ -26,3 +26,8 @@
       ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning
 ### With Key
       ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning -property "key.separator= - " --property "print.key=true"
+
+## 7) List the topics in a cluster
+      ./kafka-topics.sh --zookeeper localhost:2181 --list
+### With Kafka 3.0 onwards
+      ./kafka-topics.sh --bootstrap-server localhost:2181 --list
