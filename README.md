@@ -18,3 +18,6 @@
 ## 5) How to instantiate a Console Producer?
 ### Without key
       ./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic
+## 6)How to instantiate a Console Consumer?
+### Without Key
+      ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning
