@@ -18,6 +18,11 @@
 ## 5) How to instantiate a Console Producer?
 ### Without key
       ./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic
+### With Key
+      ./kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic --property "key.separator=-" --property "parse.key=true"
+
 ## 6)How to instantiate a Console Consumer?
 ### Without Key
       ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning
+### With Key
+      ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning -property "key.separator= - " --property "print.key=true"
