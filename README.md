@@ -31,3 +31,6 @@
       ./kafka-topics.sh --zookeeper localhost:2181 --list
 ### With Kafka 3.0 onwards
       ./kafka-topics.sh --bootstrap-server localhost:2181 --list
+      
+## 8) How to view consumer groups
+      ./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
