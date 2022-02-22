@@ -38,4 +38,12 @@
       
 ## 9)Viewing the Commit Log
       ./kafka-run-class.sh kafka.tools.DumpLogSegments --deep-iteration --files /tmp/kafka-logs/test-topic-0/00000000000000000000.log
-
+## 10) Describe topic
+### The below command can be used to describe all the topics.
+      ./kafka-topics.sh --zookeeper localhost:2181 --describe
+### Kafka 3.0 onwards
+      ./kafka-topics.sh --bootstrap-server localhost:9082 --describe
+### The below command can be used to describe a specific topic.
+      ./kafka-topics.sh --zookeeper localhost:2181 --describe --topic <topic-name>
+### Kafka 3.0 onwards
+      ./kafka-topics.sh --bootstrap-server localhost:2181 --describe --topic <topic-name>
